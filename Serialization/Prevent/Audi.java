@@ -1,11 +1,9 @@
 package Serialization;
 
 import java.io.*;
-import java.io.Serializable;
 
-public class Audi extends Car implements Serializable {
-
-	private static final long serialVersionUID = 1L;
+public class Audi extends Car{
+	
 	private String name;
 	
 	Audi (String color, String name){
@@ -29,6 +27,7 @@ public class Audi extends Car implements Serializable {
         throw new NotSerializableException();	
 	}
 	
-	
+	
+
 
 }

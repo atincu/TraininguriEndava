@@ -5,9 +5,9 @@ import java.io.*;
 public class CircularList implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	public Node start;
-	public Node end;
-	public int size;
+	private Node start;
+	private Node end;
+	private int size;
 
 	public CircularList(){
 		start = null;
@@ -17,10 +17,6 @@ public class CircularList implements Serializable{
 	
 	public boolean isEmpty(){
         return start == null;
-    }
-
-	public int getSize(){
-        return size;
     }
 
 	public void add(int val){

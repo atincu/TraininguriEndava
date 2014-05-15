@@ -1,7 +1,10 @@
 package Serialization;
 
-public class Car{
+import java.io.Serializable;
 
+public class Car implements Serializable{
+
+	private static final long serialVersionUID = -2276640560710622125L;
 	private String color;
 	
 	Car() {};
